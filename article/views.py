@@ -12,4 +12,4 @@ def myBlog(request):
 
 
     blog_list = blogPost.objects.all()
-    return HttpResponse("Hello word")
+    return HttpResponse("<a href='http://www.baidu.com'>百度一下</a>")

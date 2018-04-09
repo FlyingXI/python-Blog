@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>股票信息</title>
+	<meta name="description" content="Creating a table with Bootstrap. Learn how to use Bootstrap toolkit to create Tables with examples.">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<table class="table table-bordered">
+  <caption>股票信息</caption>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>行业</th>
+      <th>地区</th>
+      <th>市净率</th>
+      <th>市盈率</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in all %}
+    <tr>
+      <td>{{ i.name }}</td>
+      <td>{{ i.industry }}</td>
+      <td>{{ i.area }}</td>
+      <td>{{ i.pb }}</td>
+      <td>{{ i.pe }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+
+</body>
+</html>
+
